@@ -1,6 +1,5 @@
-from climbinghill import climbingHill
-from secretNumber import secretNumber
-import random
+from hillclimber.climbinghill import climbingHill
+from hillclimber.secretNumber import secretNumber
 
 
 def main():
