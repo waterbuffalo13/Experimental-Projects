@@ -26,11 +26,9 @@ class climbingHill:
     def run_hillclimber(self):
         self.print_state()
 
-        estimate_too_big = self.get_estimated_result() > self.secret_number
-        estimate_too_small = self.get_estimated_result() < self.secret_number
 
         iteration = 0
-        while self.iteration < 10:
+        while self.iteration < 100:
             if self.get_equivalence() == "False":
                 if self.get_estimated_result() > self.secret_number:
                     random_number1 = random.randint(0,1)
